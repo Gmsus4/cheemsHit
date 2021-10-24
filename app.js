@@ -8,6 +8,11 @@ function url() {
     img.src = 'img/cheemsbu.png';
 }
 
+function pause(){
+    bonk.pause();
+    bonk.currentTime = 0;
+}
+
 img.addEventListener('click',()=>{
     if(hit === true){
         img.src = 'img/cheemsbd.png';
@@ -29,6 +34,7 @@ document.addEventListener('keydown',(e)=>{
             setTimeout(url, 100);
             hitScore++;
             hitSpan.innerText = hitScore;
+            pause();
             bonk.play();
         break;
         case 'Enter':
@@ -36,6 +42,7 @@ document.addEventListener('keydown',(e)=>{
             setTimeout(url, 100);
             hitScore++;
             hitSpan.innerText = hitScore;
+            pause();
             bonk.play();
         break;
         case 'Space':
@@ -43,6 +50,7 @@ document.addEventListener('keydown',(e)=>{
             setTimeout(url, 100);
             hitScore++;
             hitSpan.innerText = hitScore;
+            pause();
             bonk.play();
         break;
     }
