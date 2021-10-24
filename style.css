@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+    background-image: url('img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 50px;
+}
+
+span{
+    font-size: 130px;
+    font-weight: 100;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    min-height: 600px;
+}
+
+.container img{
+    width: 600px;
+    cursor: pointer;
+}
+
+@media (max-width: 680px){
+    .container img{
+        width: 400px;
+    }
+}
+
+@media (max-width: 450px){
+    .container img{
+        width: 300px;
+    }
+    span{
+        font-size: 70px;
+        font-weight: 100;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
