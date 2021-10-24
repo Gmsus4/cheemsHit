@@ -1,6 +1,5 @@
 const img = document.querySelector('img');
 const hitSpan = document.querySelector('span');
-const bonk = document.querySelector(".audio");
 let hit = true;
 let hitScore = 0;
 
